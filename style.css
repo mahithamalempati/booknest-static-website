@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f4f2;
+    color: #333;
+}
+
+/* HEADER */
+
+header {
+    background: #6b2d2d;
+    color: white;
+}
+
+.header {
+    max-width: 1250px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffd5d5;
+}
+
+.cart {
+    font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 520px;
+
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1400&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0 0 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #6b2d2d;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #4d1f1f;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 10px 0 30px;
+    color: #6b2d2d;
+}
+
+/* CATEGORY */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.category-grid a {
+    background: white;
+    padding: 25px;
+    text-align: center;
+
+    text-decoration: none;
+    color: #6b2d2d;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+
+    transition: .3s;
+}
+
+.category-grid a:hover {
+    transform: translateY(-5px);
+    background: #eadcdc;
+}
+
+/* PAGE HEADING */
+
+.page-heading {
+    background: #eadcdc;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.page-heading h2 {
+    margin: 0 0 10px;
+    color: #6b2d2d;
+    font-size: 35px;
+}
+
+.page-heading p {
+    margin: 0;
+}
+
+/* BOOK GRID */
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* BOOK CARD */
+
+.book-card {
+    background: white;
+    padding: 18px;
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,.09);
+
+    transition: transform .3s, box-shadow .3s;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.15);
+}
+
+.book-image {
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f1f1f1;
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    margin-bottom: 15px;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.book-card h3 {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.book-card p {
+    color: #777;
+    margin: 5px 0;
+}
+
+.book-card h4 {
+    color: #6b2d2d;
+    font-size: 19px;
+    margin: 12px 0;
+}
+
+.book-card button {
+    width: 100%;
+    padding: 11px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #6b2d2d;
+    color: white;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.book-card button:hover {
+    background: #4d1f1f;
+}
+
+/* SEARCH */
+
+.search-box {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 14px 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 25px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #6b2d2d;
+}
+
+/* ABOUT */
+
+.about-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.about-box {
+    background: white;
+    padding: 40px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.about-box h2,
+.about-box h3 {
+    color: #6b2d2d;
+}
+
+.about-box p {
+    line-height: 1.7;
+}
+
+.about-box li {
+    margin: 12px 0;
+}
+
+/* CONTACT */
+
+.contact-section {
+    max-width: 750px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.contact-box {
+    background: white;
+    padding: 35px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.contact-box h2 {
+    text-align: center;
+    color: #6b2d2d;
+}
+
+.contact-box label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-family: Arial;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+    outline: none;
+    border-color: #6b2d2d;
+}
+
+.contact-box button {
+    width: 100%;
+    margin-top: 20px;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #6b2d2d;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-box button:hover {
+    background: #4d1f1f;
+}
+
+/* FOOTER */
+
+footer {
+    background: #6b2d2d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .book-image {
+        height: 300px;
+    }
+
+    .about-box {
+        padding: 25px;
+    }
+}

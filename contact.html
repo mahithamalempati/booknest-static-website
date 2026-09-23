@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | BookNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <h1>📚 BookNest</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="bestsellers.html">Bestsellers</a>
+            <a href="kids.html">Kids</a>
+            <a href="indian-authors.html">Indian Authors</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <span class="cart">🛒 <span id="cart-count">0</span></span>
+        </nav>
+    </div>
+</header>
+
+<section class="page-heading">
+    <h2>Contact Us</h2>
+    <p>Have a question? Send us a message.</p>
+</section>
+
+<section class="contact-section">
+
+    <div class="contact-box">
+
+        <h2>Get in Touch</h2>
+
+        <form onsubmit="submitForm(event)">
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Subject</label>
+            <input type="text" placeholder="Enter subject" required>
+
+            <label>Message</label>
+            <textarea rows="6" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 BookNest | Online Bookstore</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

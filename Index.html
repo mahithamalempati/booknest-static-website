@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <h1>📚 BookNest</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="bestsellers.html">Bestsellers</a>
+            <a href="kids.html">Kids</a>
+            <a href="indian-authors.html">Indian Authors</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <span class="cart">🛒 <span id="cart-count">0</span></span>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Find Your Next Favorite Book</h2>
+        <p>Discover stories, knowledge and adventures at BookNest.</p>
+        <a href="books.html" class="btn">Explore Books</a>
+    </div>
+</section>
+
+<section class="container">
+
+    <h2 class="section-title">Shop by Category</h2>
+
+    <div class="category-grid">
+        <a href="books.html">📚 All Books</a>
+        <a href="bestsellers.html">🔥 Bestsellers</a>
+        <a href="kids.html">🧸 Kids Books</a>
+        <a href="indian-authors.html">🇮🇳 Indian Authors</a>
+    </div>
+
+    <h2 class="section-title">Featured Books</h2>
+
+    <div class="book-grid">
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="https://books.google.com/books/content?id=ZI3gAQAACAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api" alt="The Alchemist">
+            </div>
+            <h3>The Alchemist</h3>
+            <p>Paulo Coelho</p>
+            <h4>₹299</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="https://books.google.com/books/content?id=vo5REQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api" alt="Atomic Habits">
+            </div>
+            <h3>Atomic Habits</h3>
+            <p>James Clear</p>
+            <h4>₹450</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="https://books.google.com/books/content?id=jtae0QEACAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api" alt="Wings of Fire">
+            </div>
+            <h3>Wings of Fire</h3>
+            <p>A. P. J. Abdul Kalam</p>
+            <h4>₹350</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="https://books.google.com/books/content?id=b6-MEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api" alt="Ikigai">
+            </div>
+            <h3>Ikigai</h3>
+            <p>Héctor García</p>
+            <h4>₹399</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 BookNest | Online Bookstore</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
